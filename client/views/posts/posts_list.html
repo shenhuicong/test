@@ -1,0 +1,7 @@
+<template name="postsList">
+  <div class="posts">
+    {{#each posts}}
+      <li><a href="{{pathFor 'postEdit'}}">{{url}}</a><span class="ml20">{{title}}</span><span class = "ml20">{{submitted}}</span></li>
+    {{/each}}
+  </div>
+</template>
